@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f2f2f3;
+      background-image: url(./Снимок\ экрана\ 2025-09-12\ в\ 10.06.25.png);
+      background-color: white;
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-size: 1150px;
+      position: relative;
+      z-index: 0;
+    }
+    .container {
+      background-color: #f2f2f3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 500px;
+      height: 905px;
+      padding: 10px;
+      margin-right: 930px;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      /* margin-top: -30px; */
+    }
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 130px;
+      margin-top: -10px;
+    }
+    .story {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 80px;
+    }
+    .search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      gap: 5px;
+      background-color: rgb(228, 228, 228);
+      width: 430px;
+      height: 40px;
+      border-radius: 10px;
+      padding: 10px;
+      color: grey;
+      font-size: 18px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 12px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: rgb(39, 39, 39);
+    }
+    .chat1 {
+      border-top: 1px solid rgb(204, 204, 204);
+    }
+    .chat1,
+    .chat2,
+    .chat3,
+    .chat4,
+    .chat5,
+    .chat6 {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      width: 100%;
+      padding: 5px;
+      border-bottom: 1px solid rgb(204, 204, 204);
+    }
+    .Contacts,
+    .chat2,
+    .Chats,
+    .Settings {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    }
+    .icons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      gap: 90px;
+      margin-top: 150px;
+      border-top: 1px solid rgb(204, 204, 204);
+      padding-top: 10px;
+    }
+    span {
+      font-size: 10px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h1 {
+      text-align: center;
+      font-size: 30px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .my {
+      position: relative;
+    }
+    .plus {
+      position: absolute;
+      margin-left: 50px;
+      margin-top: 40px;
+    }
+    .names {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      gap: 95px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 10px;
+    }
+    .big {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      background-color: #f2f2f3;
+      width: 932px;
+      position: absolute;
+      z-index: 1;
+      right: 0px;
+    }
+    .avatar {
+      position: absolute;
+      z-index: 2;
+      top: 100px;
+      left: 550px;
+    }
+    .message1,
+    .message2,
+    .message3 {
+      display: flex;
+      justify-content: space-between;
+    }
+    .nurbi {
+      position: absolute;
+      z-index: 3;
+      top: 87px;
+      left: 610px;
+      background-color: white;
+      padding: 10px 20px;
+      border-radius: 15px;
+    }
+    .aisha {
+      position: absolute;
+      z-index: 3;
+      top: 150px;
+      left: 610px;
+      background-color: white;
+      padding: 10px 20px;
+      border-radius: 15px;
+    }
+    .avatar3 {
+      position: absolute;
+      z-index: 3;
+      top: 250px;
+      left: 550px;
+
+      border-radius: 50%;
+    }
+    .medina {
+      position: absolute;
+      z-index: 3;
+      top: 230px;
+      left: 610px;
+      background-color: white;
+      padding: 10px 20px;
+      border-radius: 15px;
+      width: 310px;
+      height: 260px;
+      position: absolute;
+      z-index: 2;
+    }
+
+    .avatar2 {
+      position: absolute;
+      z-index: 4;
+      top: 165px;
+      left: 550px;
+    }
+    .image {
+      position: absolute;
+      z-index: 3;
+      top: 40px;
+      left: 570px;
+      border-radius: 5px;
+    }
+    .image2 {
+      position: absolute;
+      z-index: 2;
+      top: 270px;
+      left: 635px;
+      border-radius: 5px;
+      width: 300px;
+      height: 240px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="top">
+        <p style="color: rgb(0, 136, 255); font-size: 15px">Edit</p>
+        <p
+          style="
+            margin-right: -40px;
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          "
+        >
+          Chats
+        </p>
+        <img
+          style="width: 30px; height: 30px; margin-right: -120px"
+          src="./IMG_1622 — копия 2.jpg"
+        />
+        <img style="width: 30px; height: 30px" src="./IMG_1622 2.jpg" />
+      </div>
+      <div class="story">
+        <img
+          class="my"
+          style="width: 70px; height: 70px; border-radius: 50%"
+          src="./IMG_1634.jpg"
+        />
+
+        <img
+          class="plus"
+          style="width: 20px; height: 20px"
+          src="./IMG_1635.jpg"
+        />
+
+        <img
+          style="
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 2.5px solid rgb(0, 205, 0);
+          "
+          src="./IMG_1631.jpg"
+        />
+      </div>
+      <div class="names">
+        <span style="font-size: 14px">My story</span>
+        <span style="font-size: 14px">Anna🇬🇧</span>
+      </div>
+      <div class="search">
+        <img
+          style="width: 25px; height: 25px"
+          src="./IMG_1624 3 — копия 4.jpg"
+        />
+        <span style="font-size: 17px">Search</span>
+      </div>
+
+      <div class="chat1">
+        <img style="margin-right: -340px" src="./IMG_1625.jpg" />
+        <p style="color: grey">
+          <b style="color: black">medina</b><br />etudqa kelsi
+        </p>
+        <p>4:39</p>
+      </div>
+      <div class="chat2">
+        <img src="./IMG_1626.jpg" />
+        <p style="margin-right: 155px; color: grey">
+          <b style="color: black">MATH</b><br />
+          x=(−b±√(b²−4ac))/(2a)Quadratic formula
+        </p>
+        <p>5:20</p>
+      </div>
+
+      <div class="chat3">
+        <img src="./IMG_1627.jpg" />
+        <p style="margin-right: 210px; color: grey">
+          <b style="color: black">Anna🇬🇧</b
+          ><br />testimonials-grid-section-main.zip
+        </p>
+        <p>6:09</p>
+      </div>
+
+      <div class="chat4">
+        <img src="./IMG_1629.jpg" />
+        <p style="margin-right: 305px; color: grey">
+          <b style="color: black">Brain</b><br />Hello guuuuyyysss
+        </p>
+        <p>9:34</p>
+      </div>
+
+      <div class="chat5">
+        <img src="./IMG_1631.jpg" />
+        <p style="margin-right: 210px; color: grey">
+          <b style="color: black">Dilnoza</b
+          ><br />testimonials-grid-section-main.zip
+        </p>
+        <p>Tue</p>
+      </div>
+
+      <div class="chat6">
+        <img src="./IMG_1633.jpg" />
+        <p style="margin-right: 315px; color: grey">
+          <b style="color: black">Balau</b><br />privet akniyet👋🏻
+        </p>
+        <p>Tue</p>
+      </div>
+      <div class="icons">
+        <div class="Contacts">
+          <span
+            ><img style="width: 40px; height: 40px" src="./IMG_1624 3.jpg" />
+            <br />Contacts</span
+          >
+        </div>
+
+        <div class="Calls">
+          <span
+            ><img
+              style="width: 40px; height: 40px"
+              src="./IMG_1624 3 — копия.jpg"
+            />
+            <br />Calls</span
+          >
+        </div>
+
+        <div class="Chats">
+          <span
+            ><img
+              style="width: 40px; height: 40px"
+              src="./IMG_1624 3 — копия 2.jpg"
+            />
+            <br />Chats</span
+          >
+        </div>
+
+        <div class="Settings">
+          <span
+            ><img
+              style="width: 40px; height: 40px"
+              src="./IMG_1624 3 — копия 3.jpg"
+            />
+            <br />Settings</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="big">
+      <div class="homework">
+        <p><b>Home works</b><br />222 messages</p>
+        <p style="color: rgb(0, 132, 255)">...</p>
+      </div>
+    </div>
+    <div class="message1">
+      <img class="avatar" src="./pp.jpg" />
+      <p class="nurbi" style="color: rgb(0, 110, 255)">
+        <span style="color: chocolate; font-size: 13px">Ansar Gabit</span><br />
+        https://shadowmonarchsss.github.io/class/
+
+        <span style="color: rgb(93, 93, 93)">10:42</span>
+      </p>
+    </div>
+
+    <div class="message2">
+      <img class="avatar2" src="./IMG_1631.jpg" />
+      <p class="aisha" style="color: rgb(0, 110, 255)">
+        <span style="color: rgb(108, 184, 195); font-size: 13px">Aisha</span
+        ><br />
+        https://youtu.be/lo5Igpcyh9Y
+
+        <span style="color: rgb(93, 93, 93)">10:57</span>
+      </p>
+    </div>
+
+    <div class="message3">
+      <img class="avatar3" src="./IMG_1625.jpg" />
+      <p class="medina" style="color: rgb(0, 110, 255)">
+        <span style="color: rgb(108, 184, 195); font-size: 13px">medina</span
+        ><br />
+      </p>
+      <img class="image2" src="./screen.jpg" />
+    </div>
+  </body>
+</html>
